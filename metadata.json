@@ -1,0 +1,6 @@
+{
+  "name": "GaLaBau ERP & Baustellenmanagement",
+  "description": "Zentrale Organisationsplattform für Garten- und Landschaftsbaubetriebe mit Mitarbeiterverwaltung, Zeiterfassung, Disposition, Maschinenpark, Lager und Finanzauswertungen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

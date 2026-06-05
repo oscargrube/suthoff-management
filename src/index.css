@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;450;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Geometric Balance Override: Emerald color scale mapped to premium deep botanical and mint greens */
+  --color-emerald-50: #f0fbf4;
+  --color-emerald-100: #d8f3dc;
+  --color-emerald-200: #b7e4c7;
+  --color-emerald-300: #95d5b2;
+  --color-emerald-400: #74c69d;
+  --color-emerald-500: #52b788;
+  --color-emerald-600: #40916c;
+  --color-emerald-700: #2d6a4f;
+  --color-emerald-800: #1b4332;
+  --color-emerald-900: #133526;
+  --color-emerald-950: #081c15;
+
+  /* Additional system parameters for crisp border weights & shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(8, 28, 21, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(8, 28, 21, 0.06), 0 2px 4px -1px rgba(8, 28, 21, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(8, 28, 21, 0.08), 0 4px 6px -2px rgba(8, 28, 21, 0.03);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fafbfc; /* Crisp slightly cool bg for high contrast */
+  color: #1a2421; /* Slightly dark slate with deep botanical tint */
+}
+
+/* Custom scrollbars for a highly polished, detailed interface */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f5f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9dfca;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a2c6a4;
+}
+
+/* Custom fade-in for fluid screen transitions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
